@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vami gioielli</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <nav>
+      <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+      <div class="ham-menu" id="ham-menu">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">CHI SIAMO</a></li>
+          <li><a href="#">GIOIELLI</a></li>
+          <li><a href="#">SERVIZI</a></li>
+          <li><a href="#">BRAND</a></li>
+          <li><a href="#">CONTATTI</a></li>
+          <li><a href="#">SHOP</a></li>
+        </ul>
+      </div>
+      <div id="logo"></div>
+    </nav>
+
+    <main></main>
     <script src="script.js"></script>
   </body>
 </html>

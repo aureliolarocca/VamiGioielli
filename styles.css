@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+}
+/*Ham - menu*/
+.menu-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+/*Menu' ad apparizione*/
+.ham-menu {
+  position: fixed;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+}
+/*Cliccato*/
+.ham-menu.show {
+  left: 0;
+}
+
+/*Bottone di chiusura*/
+.close-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/*Contenitore lista Menu(Home/servizi/ecc*/
+.ham-menu ul {
+  list-style: none;
+  margin-top: 5rem;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*Liste */
+.ham-menu ul li {
+  margin: 1.2rem 0;
+}
+
+/*Liste tag */
+.ham-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+#logo {
+  width: 10rem;
+  height: 5rem;
+  border: 1px solid yellow;
+  margin: 0 auto;
+  background-image: url(Logo.svg);
+  background-position: center;
+  background-size: cover;
+}
