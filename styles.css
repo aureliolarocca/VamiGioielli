@@ -93,7 +93,7 @@ nav {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: 140vh;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ main {
 .slider-container {
   position: relative;
   width: 100vw;
-  height: 40vh; /* Occupa tutto lo schermo */
+  height: 88vh; /* Occupa tutto lo schermo */
   overflow: hidden;
   border: 1px solid black;
 }
@@ -111,7 +111,7 @@ main {
   display: flex;
   width: 300%; /* 3 immagini = 300% */
   transition: transform 1s ease-in-out;
-  height: 40vh;
+  height: 88vh;
 }
 
 .slider img:nth-of-type(1) {
@@ -138,7 +138,7 @@ main {
 
 .article {
   width: 100vw;
-  height: 60vh;
+  height: 52vh;
 
   background-color: rgba(0, 0, 0, 0.79);
 }
