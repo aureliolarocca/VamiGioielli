@@ -6,6 +6,7 @@
 
 body {
   font-family: "Open Sans", serif;
+  height: 100000px;
 }
 
 nav {
@@ -14,15 +15,21 @@ nav {
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100vw;
   height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Per essere sicuro che rimanga sopra gli altri elementi */
 }
 /*Ham - menu*/
 .menu-btn {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
+
+  margin-right: -20px;
 }
+
 /*Menu' ad apparizione*/
 .ham-menu {
   position: fixed;
@@ -53,7 +60,6 @@ nav {
 .ham-menu ul {
   list-style: none;
   margin-top: 5rem;
-  border: 1px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,11 +77,113 @@ nav {
   font-size: 1rem;
 }
 #logo {
-  width: 10rem;
-  height: 5rem;
-  border: 1px solid yellow;
+  width: 8rem;
+  height: 4rem;
+
   margin: 0 auto;
   background-image: url(Logo.svg);
   background-position: center;
   background-size: cover;
+  transition: left 0.3s ease;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.slider-container {
+  position: relative;
+  width: 100vw;
+  height: 40vh; /* Occupa tutto lo schermo */
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.slider {
+  display: flex;
+  width: 300%; /* 3 immagini = 300% */
+  transition: transform 1s ease-in-out;
+  height: 40vh;
+}
+
+.slider img:nth-of-type(1) {
+  width: 100vw; /* L'immagine prende tutta la larghezza del viewport */
+  height: 100%;
+  object-fit: cover; /* Riempie il contenitore senza distorcere */
+  flex-shrink: 0;
+  object-position: center center;
+}
+.slider img:nth-of-type(2) {
+  width: 100vw; /* L'immagine prende tutta la larghezza del viewport */
+  height: 100%;
+  object-fit: cover; /* Riempie il contenitore senza distorcere */
+  flex-shrink: 0;
+  object-position: left;
+}
+.slider img:nth-of-type(3) {
+  width: 100vw; /* L'immagine prende tutta la larghezza del viewport */
+  height: 100%;
+  object-fit: cover; /* Riempie il contenitore senza distorcere */
+  flex-shrink: 0;
+  object-position: center center;
+}
+
+.article {
+  width: 100vw;
+  height: 60vh;
+
+  background-color: rgba(0, 0, 0, 0.79);
+}
+#anello-background-personalizza {
+  width: 15rem;
+  height: 15rem;
+
+  border-radius: 50%;
+  background-image: url(Anello.svg);
+  background-position: center;
+  background-size: cover;
+  margin: 1rem auto;
+}
+.article h2 {
+  font-family: "Roboto", serif;
+  font-size: 1.34rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+h2 span {
+  color: #d4af37;
+  font-weight: 700;
+}
+.article p:nth-of-type(1) {
+  font-size: 0.93rem;
+  text-align: start;
+  margin-left: 1rem;
+  color: white;
+}
+
+p span {
+  color: #d4af37;
+  font-weight: 600;
+}
+.article p:nth-of-type(2) {
+  font-size: 0.93rem;
+  text-align: start;
+  margin-left: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.article p:nth-of-type(3) {
+  font-size: 0.7rem;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 2rem;
 }
