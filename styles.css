@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflox-x:hidden;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 }
 
 nav {
+  overflow:hidden;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 1rem 1.5rem;
@@ -95,6 +97,7 @@ main {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  overflow:hidden;
 }
 .slider-container {
   position: relative;
